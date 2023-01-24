@@ -1,6 +1,6 @@
 :root {
     --white: #FFFFFF;
-    --aqua: #00ffff;
+    --aqua: #11ebeb;
     --grey: #dcdcdc;
     --darkgrey: #615f5f;
     --lightgrey: #f4f4f4;
@@ -16,9 +16,7 @@ body {
 
 .container {
     width: 100%;
-    display: flex;
     max-width: var(--maxwidth);
-    justify-content: center;
     margin: 3rem auto;
 }
 
@@ -34,8 +32,34 @@ header {
     color: var(--darkgrey);
 }
 
-#kategorier {
-    display: block;
-    text-decoration: none;
-    list-style: none;
+nav {
+    width: 100%;
+    display: flex;
+    padding-left: 5rem;
+    max-width: var(--maxwidth);
 }
+
+button {
+    display: flex;
+    width: 100%;
+    padding: 2rem;
+    border: 0.1rem solid var(--grey);
+    background-color: var(--lightgrey);
+    font-family: Arial, sans-serif;
+    font-size: 30px;
+    color: var(--darkgrey);
+} 
+
+button:active {
+    background-color: var(--aqua);
+    color: var(--white);
+    border-color: var(--aqua);
+}
+
+/*button:hover {/*
+    background-color: #8bfafa;
+    transition: ease-in-out .3s;
+}*/
+
+
+
