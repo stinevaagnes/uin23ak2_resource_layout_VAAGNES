@@ -179,3 +179,8 @@ function toggleCat5() {
     document.querySelector("#cat-4").classList.add("hidden")
     document.querySelector("#cat-1").classList.add("hidden")
 }
+
+//Kilder: 
+//så på website menu-oppgaven fra eksamen i innføring i programmering
+//så på legodudes-oppgaven fra forelesningene
+//prøvde meg frem
