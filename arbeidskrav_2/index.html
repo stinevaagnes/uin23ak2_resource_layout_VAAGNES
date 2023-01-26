@@ -8,22 +8,29 @@
     <link href="style.css" rel="stylesheet">
 </head>
 <body>
-    <header class="container">
+    <header class="top-container">
         <h1>RESSURSARKIV</h1>
     </header>
 
-
-    <nav id="kategorier">
-            <button id="html-button" onclick="openHTML()">HTML</button>
-            <button id="css-button" onclick="OpenCSS()">CSS</button>
-            <button id="js-button" onclick="OpenJS()">JAVASCRIPT</button>
-            <button id="react-button" onclick="OpenReact()">REACT</button>
-            <button id="SanHeadCMS-button" onclick="OpenSanHeadCMS()">SANITY AND HEADLESS CMS</button>
+    <nav id="menu">
+            <button id="html-button" class="" onClick="toggleCat1()">HTML</button>
+            <button id="css-button" class="" onClick="toggleCat2()">CSS</button>
+            <button id="js-button" class="" onClick="toggleCat3()">JAVASCRIPT</button>
+            <button id="react-button" class="" onClick="toggleCat4()">REACT</button>
+            <button id="sanity-button" class="" onClick="toggleCat5()">SANITY AND HEADLESS CMS</button>
     </nav>
-    <main>
-        
-    </main>
-
+    <div id="article-list" class="container">
+    <article id="cat-1" class="container hidden">
+     <h2 id="category">HTML2</h2>
+     <p id="text">HTML står for HyperText Markup Language, og er et strukturspråk<br> 
+        som brukes for å lage strukturer til nettside- og applikasjonsgrensesnitt.</p>
+        <ul id="sources">
+            <li id="title"><a id="url" href="https://www.w3schools.com/html/">W3Schools</a></li>
+            <li id="title"><a id="url" href="https://html.spec.whatwg.org/multipage/">HTML Living Standard</a></li>
+            <li id="title"><a id="url" href="https://html.com/">HTML.com Tutorials</a></li>
+        </ul>
+    </article>
+</div>
     <script src="ressurser.js"></script>
 </body>
 </html>

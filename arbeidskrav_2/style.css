@@ -1,6 +1,6 @@
 :root {
     --white: #FFFFFF;
-    --aqua: #11ebeb;
+    --aqua: #12e6e6;
     --grey: #dcdcdc;
     --darkgrey: #615f5f;
     --lightgrey: #f4f4f4;
@@ -14,10 +14,22 @@ body {
     font-size: var(--rootsize);
 }
 
-.container {
+.top-container {
     width: 100%;
     max-width: var(--maxwidth);
     margin: 3rem auto;
+    margin-top: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: var(--maxwidth);
+    margin: 2.5rem;
+    margin-top: 0;
+}
+
+element {
+    left: 88px;
 }
 
 header {
@@ -40,26 +52,55 @@ nav {
 }
 
 button {
-    display: flex;
     width: 100%;
-    padding: 2rem;
+    padding: 1rem;
+    display: inline-block;
     border: 0.1rem solid var(--grey);
     background-color: var(--lightgrey);
     font-family: Arial, sans-serif;
-    font-size: 30px;
+    font-size: 23px;
     color: var(--darkgrey);
+    margin-right: 20px;
 } 
 
-button:active {
+.active{
     background-color: var(--aqua);
     color: var(--white);
     border-color: var(--aqua);
 }
+h2 {
+    text-transform: uppercase;
+    width: 100%;
+    color: var(--darkgrey);
+}
 
-/*button:hover {/*
-    background-color: #8bfafa;
-    transition: ease-in-out .3s;
-}*/
+article {
+    border: 0.1rem solid var(--grey);
+    padding: 2rem;
+    border-top: 0.5rem solid var(--aqua);
+    position: absolute;
+    max-width: var(--maxwidth);
+    width:100%;
+}
 
+p {
+    color: var(--darkgrey);
+}
 
+#title {
+    color: var(--darkgrey);
+}
+
+#url {
+    color: var(--aqua);
+}
+
+ul {
+    margin-top: 30px;
+}
+
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+}
 
